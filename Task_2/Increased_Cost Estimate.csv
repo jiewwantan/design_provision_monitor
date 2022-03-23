@@ -1,0 +1,29 @@
+Region,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+US East (N. Virginia),Amazon EC2 (Web server),"4,612","1,809.00",21708,USD,"Operating system (Linux), Quantity (4), vCPU(4), 16Gb memory, Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (3000 GB), Instance type (m5.xlarge)"
+US East (N. Virginia),Amazon EC2 (Application server),"3,708.00","1,809.00",21708,USD,"Operating system (Linux), Quantity (4), vCPU(4), 16Gb memory, Storage for each EC2 instance (General Purpose SSD (gp2)), Storage amount (3000 GB), Instance type (m6g.xlarge)"
+US East (N. Virginia),Amazon RDS for MySQL,0,"2,460.40",29524.8,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (3000 GB), Quantity (2), Instance type (db.m3.xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
+US East (N. Virginia),Amazon Elastic IP,0,0,0,USD,"Number of EC2 instances (1), Number of EIPs per instance (1)"
+US East (N. Virginia),S3 Standard,0,"1,150",13800,USD,S3 Standard storage (50000 GB per month)
+US East (N. Virginia),S3 Glacier Instant Retrieval,0,200,2400,,"S3 Glacier Instant Retrieval storage (50000 GB per month)
+
+"
+US East (N. Virginia),Data Transfer,0,0,0,USD,"Inbound (from: Not selected) 0 TB per month 
+ Outbound (to: Not selected) 0 TB per month"
+US East (N. Virginia),Elastic Load Balancing (App),0,"2,352.43",28229.16,USD,Number of Application Load Balancers (1)
+US East (N. Virginia),Elastic Load Balancing (Network),0,"1,089.53",13074.36,USD,"Number of Network Load Balancers (1), Average number of new TCP connections (10000 per second), Average number of new UDP Flows (10000 per second), Average UDP Flow duration (60 seconds), Average TCP connection duration (60 seconds), Processed bytes per NLB for TCP (20 GB per hour), Processed bytes per NLB for UDP (20 GB per hour), Processed bytes per NLB for TLS (20 GB per hour), Average number of new TLS connections (10000 per second), Average TLS connection duration (60 seconds)"
+US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,"2,765.70",33188.4,USD,Number of NAT Gateways (2)
+US East (N. Virginia),Amazon Route 53,0,"1,038",12456,USD,"Hosted Zones (1), Basic Checks Within AWS (300), Number of Elastic Network Interfaces (10)"
+US East (N. Virginia),Amazon CloudWatch,0,51.18,614.16,USD,"Number of Metrics (includes detailed and custom metrics) (100), GetMetricData: Number of metrics requested (20), Standard Logs: Data Ingested (10 GB), Logs Delivered to CloudWatch Logs: Data Ingested (10 GB), Number of Contributor Insights rules for DynamoDB (10), Total number of events for DynamoDB (2 million events per month), Number of Dashboards (5), Number of Custom/Cross-account events (100), Expected Logs Data scanned (5 GB)"
+US East (N. Virginia),Amazon ElastiCache ,,"2,657.20",31886.4,,Nodes ( 2 instances of type Memcached Memory optimized cache r4.4xlarge OnDemand )
+,,Total,17382.44,208589.28,,
+,,,,,,
+Changes made: ,,,,,,
+1. Added ElastiCache for secure and fast performance,,,,,,
+2. Restore web and app EBS storage to 3000Gb,,,,,,
+3. Increase storage for RDS for MySQL and S3 standard,,,,,,
+4. Increased the Basic Checks amount of Route 53 to 300 and Elastic network instant to 10,,,,,,
+5. Increase specs of Application and Network Load Balancer and NAT,,,,,,
+6. VPC - increased number of NAT Gateways from 1 to 2. One per availability zone,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
