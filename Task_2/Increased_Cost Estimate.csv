@@ -4,7 +4,7 @@ US East (N. Virginia),Amazon EC2 (Application server),"3,708.00","1,809.00",2170
 US East (N. Virginia),Amazon RDS for MySQL,0,"2,460.40",29524.8,USD,"Storage for each RDS instance (General Purpose SSD (gp2)), Storage amount (3000 GB), Quantity (2), Instance type (db.m3.xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment option (Multi-AZ), Pricing strategy (OnDemand)"
 US East (N. Virginia),Amazon Elastic IP,0,0,0,USD,"Number of EC2 instances (1), Number of EIPs per instance (1)"
 US East (N. Virginia),S3 Standard,0,"1,150",13800,USD,S3 Standard storage (50000 GB per month)
-US East (N. Virginia),S3 Glacier Instant Retrieval,0,200,2400,,"S3 Glacier Instant Retrieval storage (50000 GB per month)
+US East (N. Virginia),S3 Glacier Instant Retrieval,0,200,2400,USD,"S3 Glacier Instant Retrieval storage (50000 GB per month)
 
 "
 US East (N. Virginia),Data Transfer,0,0,0,USD,"Inbound (from: Not selected) 0 TB per month 
@@ -14,8 +14,8 @@ US East (N. Virginia),Elastic Load Balancing (Network),0,"1,089.53",13074.36,USD
 US East (N. Virginia),Amazon Virtual Private Cloud (VPC),0,"2,765.70",33188.4,USD,Number of NAT Gateways (2)
 US East (N. Virginia),Amazon Route 53,0,"1,038",12456,USD,"Hosted Zones (1), Basic Checks Within AWS (300), Number of Elastic Network Interfaces (10)"
 US East (N. Virginia),Amazon CloudWatch,0,51.18,614.16,USD,"Number of Metrics (includes detailed and custom metrics) (100), GetMetricData: Number of metrics requested (20), Standard Logs: Data Ingested (10 GB), Logs Delivered to CloudWatch Logs: Data Ingested (10 GB), Number of Contributor Insights rules for DynamoDB (10), Total number of events for DynamoDB (2 million events per month), Number of Dashboards (5), Number of Custom/Cross-account events (100), Expected Logs Data scanned (5 GB)"
-US East (N. Virginia),Amazon ElastiCache ,,"2,657.20",31886.4,,Nodes ( 2 instances of type Memcached Memory optimized cache r4.4xlarge OnDemand )
-,,Total,17382.44,208589.28,,
+US East (N. Virginia),Amazon ElastiCache ,0,"4,794.64",31886.4,USD,Nodes ( 2 instances of type Memcached Memory optimized cache r4.4xlarge OnDemand )
+,,Total,"19,519.88","208,589.28",,
 ,,,,,,
 Changes made: ,,,,,,
 1. Added ElastiCache for secure and fast performance,,,,,,
@@ -24,6 +24,3 @@ Changes made: ,,,,,,
 4. Increased the Basic Checks amount of Route 53 to 300 and Elastic network instant to 10,,,,,,
 5. Increase specs of Application and Network Load Balancer and NAT,,,,,,
 6. VPC - increased number of NAT Gateways from 1 to 2. One per availability zone,,,,,,
-,,,,,,
-,,,,,,
-,,,,,,
